@@ -1,0 +1,54 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="subheader">
+        Page Header
+    </ui:define>
+    
+    <ui:define name="content">
+        
+        <style>
+            .ui-inputfield {
+                width: 70%;
+            }
+            
+        </style>
+        <div class="Container100">
+            <div class="Card TexAlCenter ">
+                <div class="CardTopic Blue">¿Que quieres saber?</div>
+                <div class="Separator"></div>
+                <p:autoComplete styleClass="Wid70"/>
+                <br/>
+                <br/>
+                <span class="Leaden">Use this page to start from scratch and place your custom content.</span>
+                
+                <br/><br/>
+                
+                <p:dataTable>
+                    <p:column headerText="Producto">
+                        <span class="Leaden">Cerrucho grande</span>
+                    </p:column>
+                    <p:column headerText="Cantidad">
+                        <span class="Leaden">2</span>
+                    </p:column>
+                    <p:column headerText="Precio">
+                        <span class="Leaden">60.000</span>
+                    </p:column>
+                    <p:column headerText="Impuesto">
+                        <span class="Leaden">10%</span>
+                    </p:column>
+                    <p:column headerText="Total">
+                        <span class="Leaden">120.000</span>
+                    </p:column>
+                </p:dataTable>
+                
+            </div>
+        </div>
+        
+    </ui:define>
+
+</ui:composition>
