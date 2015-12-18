@@ -35,12 +35,12 @@
     <!-- TOPMENU START -->
     <ul id="top-menu">
         <li style="float:left; border:none;">
-            <a href="#"><i class="icon-vcard Opac80"></i><span><span class="Fs16">Mr. Jack BAUER, Welcome</span> <br/> <span class="Opac50 Fs12">Your last login - 18.08.2015 | 3:55 PM</span></span></a>
+            <a href="#"><i class="icon-vcard Opac80 Fs22"></i><span><span class="Fs16">Mr. Jack BAUER, Welcome</span></span></a>
         </li>
 
         <ui:repeat value="#{menuController.modulos}" var="m">
             <li>
-                <a href="#{m.defaultpage}"><i class="#{m.iconFont}"></i><span><span class="Fs16">#{m.nombre}</span> <br/> <span class="Opac50 Fs12">#{m.subtitle}</span></span></a>
+                <a href="#{m.defaultpage}" class="menuSeleccionado"><i class="#{m.iconFont}"></i><span class="Fs16">#{m.nombre}</span></a>
             </li>
         </ui:repeat>
 

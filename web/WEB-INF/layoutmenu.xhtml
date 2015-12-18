@@ -7,7 +7,8 @@
     xmlns:pv="http://primefaces.org/volt">
 
     <h:form id="menuform">
-        <pv:menu>
+        <pv:menu model="#{menuController.menuModel}"/>
+        <!--pv:menu>
            
             <p:submenu id="rm_menupos" label="Menu Position" icon="icon-select">
                 <p:menuitem id="rm_left" url="#" value="Inline Menu" icon="icon-uniE675" onclick="$('body').removeClass('PopupMenu');return false;"/>
@@ -51,7 +52,7 @@
             </p:submenu>
 
             
-        </pv:menu>
+        </pv:menu-->
     </h:form>
 
 </ui:composition>
